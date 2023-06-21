@@ -723,7 +723,7 @@ button{
 
 /* NAV_TABLET */
 
-@media screen and (min-width: 428px) and (max-width: 768px){
+@media screen and (min-width: 429px) and (max-width: 768px){
     .container{
         width: 768px;
     }
