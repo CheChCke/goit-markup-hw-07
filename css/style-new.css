@@ -723,7 +723,7 @@ button{
 
 /* NAV_TABLET */
 
-@media screen and (min-width: 429px) and (max-width: 768px){
+@media screen and (min-width: 429px){
     .container{
         width: 768px;
     }
@@ -873,6 +873,158 @@ button{
     .text-description{
         width: 351px;
     }
+}
+
+/* OUR_TEAM */
+
+.list-worker{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px ;
+}
+
+.worker{
+    margin: 0;
+}
+
+.worker:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+/* CUSTOMERS */
+
+.client-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+    margin-top: 72px;
+}
+
+.client-items{
+    width: calc((100% - 216px) / 3);
+    padding: 0;
+    margin: 0;
+}
+
+/* FOOTER_TABLET */
+
+.footer-wraper{
+    flex-wrap: wrap;
+}
+
+.footer-log-inf{
+    margin-left: 108px;
+    text-align: left;
+}
+
+.footer-soc-med{
+    margin: 0;
+}
+
+.soc-footer-list{
+    margin: 16px 0;
+}
+
+.social-media-footer-wrap{
+    margin-left: 24px;
+}
+
+.text-form-footer{
+    margin: 0 0 16px 108px;
+}
+
+.form-footer{
+    display: flex;
+    padding: 0;
+}
+
+.label-form{
+    margin-left: 108px;
+    padding: 0;
+}
+
+.input-email{
+    width: 264px;
+}
+
+.btn-footer-sub{
+    margin: 0 0 0 24px;
+}
+
+@media screen and (min-width: 768px){
+
+    .container{
+        width: 846px;
+        margin-left: 156px
+    }
+
+    .menu-list{
+        margin-left: 76px;
+    }
+
+    .list .menu{
+        padding-bottom: 20px;
+    }
+
+    .information-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* HERO_DESKTOP */
+
+        .main-hero {
+            background-color: var(--color-hero-bg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index-img/people-office.jpg);
+            width: 1158px;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .main-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index-img/people-office-desktop-2x.jpg);
+            }
+        }
+
+        .main-title{
+            font-size: 56px;
+            font-family: Roboto;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: 1.12px;
+            padding-top: 188px;
+        }
+
+        .button-hero-main{
+            margin-top: 48px ;
+        }
+
+        /* ABOUT_US_DESCRIPTION */
+
+        .list-about-cards{
+            display: contents;
+        }
+
+.list-about-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+        .about-us-text {
+            width: calc((100% - 72px) / 4);
+        }
 
 
 }
