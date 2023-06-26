@@ -14,12 +14,15 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/style-new.css">
+    <!-- <link rel="stylesheet" href="./css/style-new.css"> -->
+    <link rel="stylesheet" href="./css/style-newnew-mobile.css">
+    <link rel="stylesheet" href="./css/style-new-tablet.css">
+    <link rel="stylesheet" href="./css/style-new-desktop.css">
 </head>
 <!-- HEADER -->
 <body>
     <header class="header-main-container">
-        <div class="container container-flex">
+        <div class="container container-flex flex-nav">
             <nav class="header-nav">
                 <a href="./index.html" class="logo link">Web<span class="logo-text">Studio</span></a>
                 <ul class="list menu-list">
@@ -35,6 +38,58 @@
                     <li class="information-item"><a href="tel:+110001111111" class="link menu tab-addres">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="mob-open-menu" data-menu-open>
+                <svg class="burger-icon" width="32" height="22">
+                    <use href="./images/charm_menu-hamburger.svg#Vector"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu" data-menu>
+            <button class="mob-close-menu" data-menu-close>
+                <svg class="close-icon" width="24" height="24">
+                    <use href="./images/close-black-18dp (2) 1.svg#Vector"></use>
+                </svg>
+            </button>
+            <ul class="list mob-menu-list">
+                <li class="mob-menu-item"><a href="./index.html" class="link menu mob-menu-link mob-menu-link-color">Studio</a></li>
+                <li class="mob-menu-item"><a href="./portfolio.html" class="link menu mob-menu-link">Portfolio</a></li>
+                <li class="mob-menu-item"><a href="" class="link menu mob-menu-link">Contacts</a></li>
+            </ul>
+            <ul class="mob-information-list list">
+                <li class="mob-information-item-phone"><a href="tel:+110001111111" class="link menu tab-addres mob-menu-link-color">+11 (000) 111-11-11</a></li>
+                <li class="mob-information-item-mail"><a href="mailto:info@devstudio.com" class="link menu tab-addres mob-menu-link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="list flex-soc-icon-mob">
+                <li class="soc-icon-list">
+                    <a href="instagram" class="soc-icon-img">
+                        <svg width="16" height="16" class="svg-icons">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-icon-list">
+                    <a href="instagram" class="soc-icon-img">
+                        <svg width="16" height="16" class="svg-icons">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-icon-list">
+                    <a href="instagram" class="soc-icon-img">
+                        <svg width="16" height="16" class="svg-icons">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-icon-list">
+                    <a href="instagram" class="soc-icon-img">
+                        <svg width="16" height="16" class="svg-icons">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 <!-- HEADER_END -->
@@ -459,5 +514,6 @@
 </div>
 <!-- FOOTER_END -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
