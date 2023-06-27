@@ -60,7 +60,11 @@ button {
 }
 
 .container {
-    width: 428px;
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-nav{
@@ -107,18 +111,24 @@ button {
     padding: 24px 24px 60px 40px;
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 1000vh;
+    width: 100%;
+    height: 100%;
     background-color: #ffffff;
 }
 
 .mob-close-menu{
-    margin-left: 340px;
+    display: flex;
+    margin-left: auto;
     background-color: white;
     border-radius: 50%;
     border-color: #E7E9FC;
     border-style: solid;
     margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .close-icon{
@@ -256,7 +266,7 @@ button {
 }
 
 .about-us-list {
-    margin: 96px 16px;
+    margin: 96px 0;
 }
 
 .about-us-text:not(:last-child) {
@@ -474,7 +484,6 @@ button {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.02em;
-    margin-bottom: 72px;
 }
 
 .footer-wraper {
@@ -493,6 +502,10 @@ button {
     color: var(--color-social-media);
     margin-bottom: 16px;
     margin-left: 166px;
+}
+
+.social-media-footer-wrap{
+    margin-top: 72px;
 }
 
 .soc-footer-list {
@@ -555,6 +568,8 @@ button {
 
 .form-footer {
     padding-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .input-email::placeholder {
